@@ -2,8 +2,8 @@
 * `Turquoise` 基础组件
 * 一些方便使用的预设
 * `turquoise::core::_`中是底层组件（里接口）
-* 头文件 `core_back.h`
-* 头文件 `core_front.h`
+* 头文件 `turquoise/core_back.h`
+* 头文件 `turquoise/core_front.h`
 
 ## 里接口
 ### 概述
