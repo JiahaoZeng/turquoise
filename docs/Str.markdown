@@ -24,7 +24,7 @@
 ## 示例
 ```cpp
 // 示例： 拼接出Hello world!
-#include "turquoise.h"
+#include "turquoise/turquoise.h"
 #include <iostream>
 using namespace turquoise;
 

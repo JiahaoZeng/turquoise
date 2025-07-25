@@ -50,7 +50,7 @@ int main() {
 ```
 ## 测试（并行）
 ```cpp
-#include "turquoise.h"
+#include "turquoise/turquoise.h"
 #include <thread>
 #include <windows.h>
 using namespace turquoise;
@@ -92,7 +92,7 @@ int main() {
     return 0;
 }
 ```
-### 结果
+### 结果 `test.log`
 ```log
 2025/06/12 02:02:28.158 [TEST] ---------------------------------------------11111
 2025/06/12 02:02:28.158 [TEST] ---------------------------------------------22222
