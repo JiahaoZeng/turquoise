@@ -7,7 +7,7 @@
 * > 原始串
 # 类： `turquoise::Str`
 * > 记录特定数据类型的一组串
-* > 位于`turquoise/Str.hpp`
+* > 位于`turquoise/str.hpp`
 ## 模板参数: `<class T, class Allocator = std::allocator<T>>`
 * > `class T`: 特定数据类型
 * > `Allocator`: (可选): 满足c++标准的allocator， 默认使用std::allocator

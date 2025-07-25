@@ -2,16 +2,16 @@
 * 日志管理
 * 线程安全
 * 快速
-* 头文件`turquoise/Log.h`
+* 头文件`turquoise/log.h`
 ## 构造
-### `Log(const char* dst, const char* type)`
+### `Log(const char* dst, const char* type, bool toConsole = false)`
   1. `const char* dst`: 目标日志文件
   2. `const char* type`: 代表日志类型
+  3. `bool toConsole`：是否输出到控制台
 ## 方法
-### `void add(const char* info, bool toConsole = false)` 
+### `void add(const char* info)` 
    * 添加日志
    * `info`: 日志信息
-   * `toConsole` 是否打印到控制台
 ## 测试（同步）
 ```cpp
 // 添加一万条信息为50字节的日志
@@ -115,3 +115,9 @@ int main() {
 ```
 ## 提示
 * 出于性能考虑，单条日志信息不建议超过64字节。
+* 在头文件`config.h`中修改相关配置
+``` cpp
+7 #define TUEQUOISE_LOG_ALLOCATOR_BUFF_SIZE 64
+8 #define TURQUOISE_LOG_FILE_BUFF_SIZE 8192
+9 #define TURQUOISE_LOG_FILE_BUFF_NUMB 100
+```
