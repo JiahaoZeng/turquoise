@@ -42,8 +42,8 @@ int main() {
     //方案二
     Str<char> string4({"Hello", " ", "world", "!"});
     
-    for (int i = 0; i < string3.length(); i++) {
-        std::cout << string3[i];
+    for (int i = 0; i < string4.length(); i++) {
+        std::cout << string4[i];
     }
 
     return 0;
